@@ -1,4 +1,4 @@
-##Lab 1: Lakehouse end-to-end scenario: overview and architecture
+## Lab 1: Lakehouse end-to-end scenario: overview and architecture
 
 This lab walks you through an end-to-end scenario from data acquisition to data consumption. It helps you build a basic understanding of Fabric, including the different experiences and how they integrate, as well as the professional and citizen developer experiences that come with working on this platform. This lab isn't intended to be a reference architecture, an exhaustive list of features and functionality, or a recommendation of specific best practices.
 
