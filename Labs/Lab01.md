@@ -8,15 +8,15 @@ Traditionally, organizations have been building modern data warehouses for their
 
 1.  In the **Microsoft Fabric** window, enter your **Microsoft 365** credentials, and click on the **Submit** button.
 
-    ![](media/Lab01 (2).png)
+    ![](./media/Lab01 (2).png)
 
 2.  Then, In the **Microsoft** window enter the password and click on the **Sign in** button\*\*.\*\*
 
-    ![](media/Lab01 (3).png)
+    ![](./media/Lab01 (3).png)
 
 3.  In **Stay signed in?** window, click on the **Yes** button.
 
-    ![](media/Lab01 (4).png)
+    ![](./media/Lab01 (4).png)
 
 ![A screenshot of a computer Description automatically generated](media/Lab01 (5).png)
 
