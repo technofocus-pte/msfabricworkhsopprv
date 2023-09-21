@@ -4,73 +4,73 @@ This lab walks you through an end-to-end scenario from data acquisition to data 
 
 # Exercise 1: Setup Lakehouse end-to-end scenario
 
-Traditionally, organizations have been building modern data warehouses for their transactional and structured data analytics needs. And data lakehouses for big data (semi/Lab01(1).png)
+Traditionally, organizations have been building modern data warehouses for their transactional and structured data analytics needs. And data lakehouses for big data (semi/Lab01 (1).png)
 
 1.  In the **Microsoft Fabric** window, enter your **Microsoft 365** credentials, and click on the **Submit** button.
 
-    ![](media/Lab01(2).png)
+    ![](media/Lab01 (2).png)
 
 2.  Then, In the **Microsoft** window enter the password and click on the **Sign in** button\*\*.\*\*
 
-    ![](media/Lab01(3).png)
+    ![](media/Lab01 (3).png)
 
 3.  In **Stay signed in?** window, click on the **Yes** button.
 
-    ![](media/Lab01(4).png)
+    ![](media/Lab01 (4).png)
 
-![A screenshot of a computer Description automatically generated](media/Lab01(5).png)
+![A screenshot of a computer Description automatically generated](media/Lab01 (5).png)
 
 # Task 2: Start the Microsoft Fabric (Preview) trial
 
 Follow these steps to start your Fabric (Preview) trial.
 
-Open your browser, navigate to the address bar, and type or paste the following URL: /Lab01(6).png)
+Open your browser, navigate to the address bar, and type or paste the following URL: /Lab01 (6).png)
 
 1.  On Power BI home page select the Account manager. In the Account manager, select **Start trial**.
 
-![](media/Lab01(7).png)
+![](media/Lab01 (7).png)
 
 1.  If prompted, agree to the terms and then select **Start trial**.
 
-    ![](media/Lab01(8).png)
+    ![](media/Lab01 (8).png)
 
 2.  Once your trial capacity is ready, you receive a confirmation message. Select **Got it** to begin working in Fabric.
 
-    ![](media/Lab01(9).png)
+    ![](media/Lab01 (9).png)
 
 3.  Open your Account manager again. Notice that you now have a heading for **Trial status**. Your Account manager keeps track of the number of days remaining in your trial. You also see the countdown in your Fabric menu bar when you work in a product experience.
 
-    ![](media/Lab01(10).png)
+    ![](media/Lab01 (10).png)
 
 # Task 3: onedrive configured sign up for the microsoft 365 admin center
 
-Open your browser, navigate to the address bar, and type or paste the following URL: /Lab01(11).png)
+Open your browser, navigate to the address bar, and type or paste the following URL: /Lab01 (11).png)
 
 1.  In the **Microsoft Azure** window, enter your **Sign-in** credentials, and click on the **Next** button.
 
-    ![A screenshot of a computer Description automatically generated](media/Lab01(12).png)
+    ![A screenshot of a computer Description automatically generated](media/Lab01 (12).png)
 
 2.  Then, In the **Microsoft** window enter the password and click on the **Sign in** button\*\*.\*\*
 
-    ![](media/Lab01(13).png)
+    ![](media/Lab01 (13).png)
 
 3.  In **Stay signed in?** window, click on the **Yes** button.
 
-    ![](media/Lab01(14).png)
+    ![](media/Lab01 (14).png)
 
 4.  In Microsoft 365 admin center page on the left-side, select the **App launcher.**
 
-    ![A screenshot of a computer Description automatically generated](media/Lab01(15).png)
+    ![A screenshot of a computer Description automatically generated](media/Lab01 (15).png)
 
 5.  In the Microsoft 365 page from the Apps pane select **OneDrive**
 
-    ![A screenshot of a computer Description automatically generated](media/Lab01(16).png)
+    ![A screenshot of a computer Description automatically generated](media/Lab01 (16).png)
 
 6.  In One Drive page, under **Securely store and share files** select **your One Drive is ready**
 
-    ![A screenshot of a computer Description automatically generated](media/Lab01(17).png)
+    ![A screenshot of a computer Description automatically generated](media/Lab01 (17).png)
 
-    ![](media/Lab01(18).png)
+    ![](media/Lab01 (18).png)
 
 # Exercise 2: Build and implement an end-to-end lakehouse for your organization
 
@@ -78,11 +78,11 @@ Open your browser, navigate to the address bar, and type or paste the following 
 
 In this task, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and reports.
 
-Open your browser, navigate to the address bar, and type or paste the following URL: /Lab01(19).png)
+Open your browser, navigate to the address bar, and type or paste the following URL: /Lab01 (19).png)
 
 1.  In the Workspaces pane Select **+** **New workspace**.
 
-    ![](media/Lab01(20).png)
+    ![](media/Lab01 (20).png)
 
 2.  In the **Create a workspace tab**, enter the following details and click on the **Apply** button.
 
@@ -93,57 +93,57 @@ Open your browser, navigate to the address bar, and type or paste the following 
 | **Default storage format** | **Small dataset storage format**                                                                                          |
 | **Template apps**          | **Check the Develop template apps**                                                                                       |
 
-![](media/Lab01(21).png)
+![](media/Lab01 (21).png)
 
-![](media/Lab01(22).png)
+![](media/Lab01 (22).png)
 
-![](media/Lab01(23).png)
+![](media/Lab01 (23).png)
 
 1.  Wait for the deployment to complete. It takes 2-3 minutes to complete
 
-![](media/Lab01(24).png)
+![](media/Lab01 (24).png)
 
 ## Task 2: Create a lakehouse
 
 1.  In the **Power BI Fabric Lakehouse Tutorial-XX** page, click on the **Power BI** icon located at the bottom left and select **Data Engineering** under the Synapse.
 
-    ![](media/Lab01(25).png)
+    ![](media/Lab01 (25).png)
 
 2.  In the **Synapse** **Data Engineering** **Home** page, select **Lakehouse(Preview)** to create a lakehouse.
 
-![](media/Lab01(26).png)
+![](media/Lab01 (26).png)
 
 1.  In the **New lakehouse** dialog box, enter!! **wwilakehouse** !!in the **Name** field, click on the **Create** button and open the new lakehouse.
 
-    ![](media/Lab01(27).png)
+    ![](media/Lab01 (27).png)
 
-    ![](media/Lab01(28).png)
+    ![](media/Lab01 (28).png)
 
 2.  You will see a notification stating **Successfully created SQL endpoint**.
 
-    ![](media/Lab01(29).png)
+    ![](media/Lab01 (29).png)
 
 ## Task 3: Ingest sample data
 
 1.  In the **wwilakehouse** home page, under the **Explorer pane**, Select **New Dataflow Gen2 under Get data in your lakehouse.**
 
-    ![](media/Lab01(30).png)
+    ![](media/Lab01 (30).png)
 
-    On the new dataflow pane, select **Import from a Text/Lab01(31).png**)
+    On the new dataflow pane, select **Import from a Text/Lab01 (31).png**)
 
 2.  On the **Connect to data source** pane, select the **Upload file** radio button. Click on **Browse button** and browse your VM to **C:\\LabFiles** and then select **dimension_customer.csv** file. Select **Open.**
 
-    ![](media/Lab01(32).png)
+    ![](media/Lab01 (32).png)
 
-    ![](media/Lab01(33).png)
+    ![](media/Lab01 (33).png)
 
 3.  In the Connect to data source pane select **Next.**
 
-    ![](media/Lab01(34).png)
+    ![](media/Lab01( 34).png)
 
 4.  From the **Preview file data** page, preview the data and select **Create** to proceed and return back to the dataflow canvas.
 
-    ![](media/Lab01(35).png)
+    ![](media/Lab01 (35).png)
 
 5.  In the **Query settings** pane, enter **dimension_customer** for the **Name** field. From the menu items, select **Add data destination** and select **Lakehouse**.
 
