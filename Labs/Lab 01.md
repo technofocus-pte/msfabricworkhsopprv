@@ -20,7 +20,7 @@ This lab explains how a developer at the fictional Wide World Importers company 
 
 2.  In the **Microsoft Fabric** window, enter your **Microsoft 365**  credentials, and click on the **Submit** button.
 
-    ![](media/781a00f5fb7308776b02c72f52195665.png)
+    ![](./media/781a00f5fb7308776b02c72f52195665.png)
 
 3.  Then, In the **Microsoft** window enter the password and click on the **Sign in** button**.**
 
