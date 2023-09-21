@@ -16,7 +16,7 @@ This lab explains how a developer at the fictional Wide World Importers company 
 
 1.  Open your browser, navigate to the address bar, and type or paste the following URL: [https://app.fabric.microsoft.com/](https://app.fabric.microsoft.com/,) then press the **Enter** button.
 
-    ![image](https://github.com/technofocus-pte/msfabricworkhsop/edit/main/Labs/media/0966c8761dc69ad1b5ca1b981c9f55b0.png)
+    ![image](https://github.com/technofocus-pte/msfabricworkhsop/main/Labs/media/0966c8761dc69ad1b5ca1b981c9f55b0.png)
 
 2.  In the **Microsoft Fabric** window, enter your **Microsoft 365**  credentials, and click on the **Submit** button.
 
