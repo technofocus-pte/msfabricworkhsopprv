@@ -1,8 +1,8 @@
-## Lab 1: Lakehouse end-to-end scenario: overview and architecture
+# Lab 1: Lakehouse end-to-end scenario: overview and architecture
 
 This lab walks you through an end-to-end scenario from data acquisition to data consumption. It helps you build a basic understanding of Fabric, including the different experiences and how they integrate, as well as the professional and citizen developer experiences that come with working on this platform. This lab isn't intended to be a reference architecture, an exhaustive list of features and functionality, or a recommendation of specific best practices.
 
-# Exercise 1: Setup Lakehouse end-to-end scenario
+## Exercise 1: Setup Lakehouse end-to-end scenario
 
 Traditionally, organizations have been building modern data warehouses for their transactional and structured data analytics needs. And data lakehouses for big data (semi/unstructured) data analytics needs. These two systems ran in parallel, creating silos, data duplicity, and increased total cost of ownership.
 
@@ -12,7 +12,7 @@ With the flexibility offered by Fabric, you can implement either lakehouse or da
 
 This lab explains how a developer at the fictional Wide World Importers company from the retail domain completes the following steps:
 
-# Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
+### Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 
 1.  Open your browser, navigate to the address bar, and type or paste the following URL: [https://app.fabric.microsoft.com/](https://app.fabric.microsoft.com/,) then press the **Enter** button.
 
@@ -32,7 +32,7 @@ This lab explains how a developer at the fictional Wide World Importers company 
 
 ![A screenshot of a computer Description automatically generated](media/082c114d436e992e6bb91ca6dc1fbffb.png)
 
-# Task 2: Start the Microsoft Fabric (Preview) trial
+### Task 2: Start the Microsoft Fabric (Preview) trial
 
 Follow these steps to start your Fabric (Preview) trial.
 
@@ -56,7 +56,7 @@ Follow these steps to start your Fabric (Preview) trial.
 
     ![](media/b5c85f5a85fc985e17982061d21aee64.png)
 
-# Task 3: onedrive configured sign up for the microsoft 365 admin center
+### Task 3: onedrive configured sign up for the microsoft 365 admin center
 
 1.  Open your browser, navigate to the address bar, and type or paste the following URL: [https://admin.microsoft.com/AdminPortal/Home\#/homepage](https://admin.microsoft.com/AdminPortal/Home#/homepage) then press the **Enter** button.
 
@@ -88,9 +88,9 @@ Follow these steps to start your Fabric (Preview) trial.
 
     ![](media/79e56af7e642ecbffcb2e629d27a2554.png)
 
-# Exercise 2: Build and implement an end-to-end lakehouse for your organization
+## Exercise 2: Build and implement an end-to-end lakehouse for your organization
 
-## **Task 1: Create a Fabric workspace**
+### **Task 1: Create a Fabric workspace**
 
 In this task, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and reports.
 
@@ -122,7 +122,7 @@ In this task, you create a Fabric workspace. The workspace contains all the item
 
 ![](media/e5778bce7109e42745362ffd62c1f1db.png)
 
-## **Task 2: Create a lakehouse**
+### **Task 2: Create a lakehouse**
 
 1.  In the **Power BI Fabric Lakehouse Tutorial-XX** page, click on the **Power BI** icon located at the bottom left and select **Data Engineering** under the Synapse.
 
@@ -142,7 +142,7 @@ In this task, you create a Fabric workspace. The workspace contains all the item
 
     ![](media/f65dadd599fe72000f3242710cda7783.png)
 
-## **Task 3: Ingest sample data**
+### **Task 3: Ingest sample data**
 
 1.  In the **wwilakehouse** home page, under the **Explorer pane**, Select **New Dataflow Gen2 under Get data in your lakehouse.**
 
