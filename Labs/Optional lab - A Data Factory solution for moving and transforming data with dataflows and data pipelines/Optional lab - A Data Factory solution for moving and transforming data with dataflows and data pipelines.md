@@ -1,4 +1,4 @@
-# **Use Case 03: Data Factory solution for moving and transforming data with dataflows and data pipelines**
+# **Optional lab: Data Factory solution for moving and transforming data with dataflows and data pipelines**
 
 **Introduction**
 
