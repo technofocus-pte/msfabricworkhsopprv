@@ -67,7 +67,7 @@ analysis.
 ## Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 
 1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL:+++https://app.fabric.microsoft.com/+++
+    the following URL:!!https://app.fabric.microsoft.com/!!
     then press the **Enter** button.
 
       ![](./media/image1.png)
@@ -139,7 +139,7 @@ reports.
 
        |   |    |
        |----|---|
-       |Name|	+++Fabric Lakehouse Tutorial-XX+++ (XX can be a unique number) (here, we entered Fabric Lakehouse Tutorial-29)|
+       |Name|	!!Fabric Lakehouse Tutorial-XX!! (XX can be a unique number) (here, we entered Fabric Lakehouse Tutorial-29)|
        |Description	|This workspace contains all the items for the lakehouse tutorial |
        |Advanced	|Under License mode, select Trial|
        |Default |storage format	Small dataset storage format|
@@ -169,7 +169,7 @@ reports.
 
      ![](./media/new2.png)
 
-3.  In the **New lakehouse** dialog box, enter **wwilakehouse** in
+3.  In the **New lakehouse** dialog box, enter **!!wwilakehouse!!** in
     the **Name** field, click on the **Create** button and open the new
     lakehouse.
 
@@ -316,7 +316,7 @@ reports.
       ![](./media/image54.png)
 
 6.  In the **Save your replort** dialog box, enter a name for your
-    report as +++dimension_customer-report+++ and select **Save.**
+    report as !!dimension_customer-report!! and select **Save**
 
      ![](./media/new7.png)
 
@@ -345,7 +345,7 @@ the Wide World Importers (WWI) into the lakehouse.
       ![](./media/new8.png)
 
 3.  In the New pipeline dialog box, specify the name as
-    **+++IngestDataFromSourceToLakehouse+++** and select **Create.** A new
+    **!!IngestDataFromSourceToLakehouse!!** and select **Create.** A new
     data factory pipeline is created and opened
 
       ![](./media/image60.png)
@@ -369,9 +369,9 @@ the Wide World Importers (WWI) into the lakehouse.
     |   |   |
     |---|---|
     |Property |	Value|
-    |URL|	+++https://assetsprod.microsoft.com/en-us/wwi-sample-dataset.zip+++|
+    |URL|	!!https://assetsprod.microsoft.com/en-us/wwi-sample-dataset.zip!!|
     |Connection	|Create a new connection|
-    |Connection name	|+++wwisampledata+++ |
+    |Connection name	|!!wwisampledata!! |
     |Data gateway|	None|
     |Authentication kind|	Anonymous|
 
@@ -431,7 +431,7 @@ the Wide World Importers (WWI) into the lakehouse.
 
 13. The data is created under the **Files** section of the lakehouse
     explorer. A new folder with GUID contains all the needed data.
-    Rename the GUID to +++**wwi-raw-data+++**
+    Rename the GUID to !!wwi-raw-data!!
 
      ![](./media/image78.png)
  
