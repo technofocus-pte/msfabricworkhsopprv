@@ -41,7 +41,7 @@ Before working with data in Fabric, create a workspace with the Fabric
 trial enabled.
 
 1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL: +++https://app.fabric.microsoft.com/+++ then press
+    the following URL: !!https://app.fabric.microsoft.com/!! then press
     the **Enter** button.
 
      ![](./media/image1.png)
@@ -73,7 +73,7 @@ trial enabled.
 
       ![](./media/image6.png)
 
-7.  In the Workspaces pane, select **+** **New workspace**.
+7.  In the Workspaces pane, select **+New workspace**.
 
      ![](./media/image7.png)
 
@@ -81,7 +81,7 @@ trial enabled.
     click on the **Apply** button.
     |                          |                                               |
     |-----------------------|------------------------------------------------- |
-    |Name                   | +++Data-FactoryXX+++ (XX can be a unique number) |
+    |Name                   | !!Data-FactoryXX!! (XX can be a unique number) |
     |Advanced               |Under License mode, select Trial	|
     |Default storage format |Small dataset storage format	|
     
@@ -98,7 +98,7 @@ trial enabled.
      ![](./media/image11.png)
 
 12. In the **New lakehouse** dialog box, enter
-    **+++DataFactoryLakehouse+++** in the **Name** field, click on the
+    **!!DataFactoryLakehouse!!** in the **Name** field, click on the
     **Create** button and open the new lakehouse.
 
      ![](./media/image12.png)
@@ -121,7 +121,7 @@ trial enabled.
 
      ![](./media/image16.png)
 
-3.  In the **New pipeline** dialog box, enter +++**First_Pipeline1+++**
+3.  In the **New pipeline** dialog box, enter **!!First_Pipeline1!!**
     in the **Name** field, then click on the **Create** button.
 
       ![](./media/image17.png)
@@ -157,7 +157,7 @@ trial enabled.
 6.  Now configure the details of your Lakehouse destination on
     the **Select and map to folder path or table.** page.
     Select **Tables** for the **Root folder**, provide a table name
-    **+++Bronze+++**, and select the **Next**.
+    **!!Bronze!!**, and select the **Next**.
 
       ![](./media/image23.png)
 
@@ -176,7 +176,7 @@ trial enabled.
 
 3.  In the **Save and run?** dialog box, click on **Save and run**
     button to execute these activities. This activity will take around
-    11-12 min
+    **11-12** min
 
      ![](./media/image27.png)
 
@@ -221,7 +221,7 @@ trial enabled.
       ![](./media/image35.png)
 
 4.  In the **Choose data source** tab, search box search type
-    **+++Lakehouse+++** and then click on the **Lakehouse** connector.
+    **!!Lakehouse!!** and then click on the **Lakehouse** connector.
 
       ![](./media/image36.png)
 
@@ -292,24 +292,24 @@ trial enabled.
     
       ![](./media/image46.png)
 
-5.  Select the **storeAndFwdFlag** column's filter and sort dropdown
+4.  Select the **storeAndFwdFlag** column's filter and sort dropdown
     menu. (If you see a warning **List may be incomplete**,
     select **Load more** to see all the data.)
 
      ![](./media/image47.png)
 
-6.  Select '**Y'** to show only rows where a discount was applied, and
+5.  Select '**Y'** to show only rows where a discount was applied, and
     then select **OK**.
 
      ![](./media/image48.png)
 
-7.  Select the **Ipep_Pickup_Datetime** column sort and filter dropdown
+6.  Select the **Ipep_Pickup_Datetime** column sort and filter dropdown
     menu, then select **Date filters**, and choose
     the **Between...** filter provided for Date and Date/Time types.
 
-     ![](./media/image49.png)
+      ![](./media/image49.png)
 
-11. In the **Filter rows** dialog, select dates between **January 1,
+7. In the **Filter rows** dialog, select dates between **January 1,
     2015**, and **January 31, 2015**, then select **OK**.
 
      ![](./media/image50.png)
@@ -353,9 +353,9 @@ prepare the data before combining it with the trips data.
 
      ![](./media/image56.png)
 
-*** Note:** After promoting the headers, you can see a new step added to
-the **Applied steps** pane at the top of the dataflow editor to the data
-types of your columns.*
+    **Note:** After promoting the headers, you can see a new step added to
+    the **Applied steps** pane at the top of the dataflow editor to the data
+    types of your columns.
 
 2.  Right-click the **VendorID** column, and from the context menu
     displayed, select the option **Unpivot other columns**. This allows
@@ -366,7 +366,7 @@ types of your columns.*
 
 3.  With the table unpivoted, rename
     the **Attribute** and **Value** columns by double-clicking them and
-    changing **Attribute** to **+++Date+++** and **Value** to **+++Discount+++**.
+    changing **Attribute** to **!!Date!!** and **Value** to **!!Discount!!**.
 
      ![](./media/image58.png)
 
@@ -525,7 +525,7 @@ we can define the output destination for the query.
 
 3.  On the **Choose destination target** dialog, browse to the Lakehouse
     where you wish to load the data and name the new
-    table **+++nyc_taxi_with_discounts+++**, then select **Next** again.
+    table **!!nyc_taxi_with_discounts!!**, then select **Next** again.
 
      ![](./media/image86.png)
 
@@ -550,7 +550,7 @@ we can define the output destination for the query.
       ![](./media/image90.png)
 
 7.  In the **Dataflow 1** dialog box,
-    enter **+++nyc_taxi_data_with_discounts+++** in the name box, then
+    enter **!!nyc_taxi_data_with_discounts!!** in the name box, then
     select **Save**.
 
       ![](./media/image91.png)
@@ -635,7 +635,7 @@ use an enterprise email address.
 8.  The **Pipeline expression builder** dialog appears. Enter the
     following expression, then select **OK**:
 
-+++@concat('DI in an Hour Pipeline Succeeded with Pipeline Run Id', pipeline().RunId)+++
+    !!@concat('DI in an Hour Pipeline Succeeded with Pipeline Run Id', pipeline().RunId)!!
      ![](./media/image103.png)
 
 9.  For the **Body**, select the field again and choose the **View in
@@ -649,8 +649,8 @@ use an enterprise email address.
     ![](./media/image104.png)
     ![](./media/image105.png)
 
-** Note:** Replace **Copy data1** with the name of your own pipeline
-copy activity.
+    **Note:** Replace **Copy data1** with the name of your own pipeline
+    copy activity.
 
 10. Finally select the **Home** tab at the top of the pipeline editor,
     and choose **Run**. Then select **Save and run** again on the
