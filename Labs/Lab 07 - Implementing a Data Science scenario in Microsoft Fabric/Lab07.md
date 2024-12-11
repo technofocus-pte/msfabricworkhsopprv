@@ -1,4 +1,4 @@
-# **Use Case 02- Implementing a Data Science scenario in Microsoft Fabric** 
+# **Lab 07- Implementing a Data Science scenario in Microsoft Fabric** 
 **Introduction**
 
 The lifecycle of a Data science project typically includes (often,
