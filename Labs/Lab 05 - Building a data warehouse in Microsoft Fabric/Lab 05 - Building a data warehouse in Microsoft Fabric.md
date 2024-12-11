@@ -76,7 +76,7 @@ items.
 ## **Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)**
 
 1. Open your browser, navigate to the address bar, and type or paste
-    the following URL: +++https://app.fabric.microsoft.com/+++ then press the
+    the following URL: !!https://app.fabric.microsoft.com/!! then press the
     **Enter** button.
 
      ![](./media/image1.png)
@@ -149,7 +149,7 @@ trial enabled.
 
     |     |    |
     |-------|------|
-    |Name	| +++Warehouse_FabricXX+++ (XX can be a unique number) (here, we entered Warehouse_Fabric29)|
+    |Name	| !!Warehouse_FabricXX!! (XX can be a unique number) (here, we entered Warehouse_Fabric29)|
     |Description|	This workspace contains all the artifacts for the data warehouse|
     |Advanced|	Under License mode, select Trial|
     |Default| storage format	Small dataset storage format|
@@ -203,7 +203,7 @@ trial enabled.
      ![](./media/image23.png)
 
 3.  On the **New pipeline** dialog box, in the **Name** field, enter
-    +++Load Customer Data+++ and click on the **Create** button.
+    !!Load Customer Data!! and click on the **Create** button.
     
       ![](./media/image24.png)
 
@@ -242,12 +242,12 @@ trial enabled.
 11. On the **Connection settings** pane that appears on the right side,
     configure the following settings and click on the **Create** button.
 
-      a)	In the Account name or URL, enter +++https://fabrictutorialdata.blob.core.windows.net/sampledata/+++
+      a)	In the Account name or URL, enter !!https://fabrictutorialdata.blob.core.windows.net/sampledata/!!
 
     
       b)	In the Connection credentials section, click on the dropdown under Connection, then select Create new connection.
     
-      c)	In Connection name field, enter +++Wide World Importers Public Sample+++.
+      c)	In Connection name field, enter !!Wide World Importers Public Sample!!.
     
       d)  Set the Authentication kind to **Anonymous**.
          ![](./media/image31.png)
@@ -258,9 +258,9 @@ trial enabled.
 
 14. In the **File path** text boxes, provide:
 
-      a)	Container: **+++sampledata+++**
-      b)	File path - Directory: **+++WideWorldImportersDW/tables+++**
-      c)	 File path - File name: **+++dimension_customer.parquet+++**
+      a)	Container: **!!sampledata!!**
+      b)	File path - Directory: **!!WideWorldImportersDW/tables!!**
+      c)	 File path - File name: **!!dimension_customer.parquet!!**
       d)	In the File format drop down, choose Parquet (if you are unable to see Parquet, then type in the search box and 
          then select it)
        ![](./media/image32.png)
@@ -276,10 +276,10 @@ trial enabled.
 
     |     |    |
     |-------|------|
-    |Connection| +++WideWorldImporters+++|
+    |Connection| !!WideWorldImporters!!|
     |Table option|	select the Auto create table radio button.|
     |Data Warehouse|	drop down, select WideWorldImporters from the list|
-    |Table|	•	In the first box enter +++dbo+++                                                                                    •	In the second box enter +++dimension_customer+++|
+    |Table|	•	In the first box enter !!dbo!!                                                                                    •	In the second box enter !!dimension_customer!!|
 
      ![](./media/image35.png)
 
@@ -393,7 +393,7 @@ trial enabled.
       ![](./media/image46.png)
 
 7.  In the **Rename** dialog box, under **Name** field, enter
-    **+++Create Tables+++** to change the name of **SQL query 1**. Then,
+    **!!Create Tables!!** to change the name of **SQL query 1**. Then,
     click on the **Rename** button.
 
      ![](./media/image47.png)
@@ -453,7 +453,7 @@ methods for loading
      ![](./media/image54.png)
 
 6.  In the **Rename** dialog box, under the **Name** field, enter
-    **+++Load Tables+++**. Then, click on **Rename** button.
+    **!!Load Tables!!**. Then, click on **Rename** button.
 
     ![](./media/image55.png)
 
@@ -510,7 +510,7 @@ syntax.
      ![](./media/image61.png)
 
 7.  In the **Rename** dialog box, under the **Name** field, enter
-    **+++Clone Table+++**, then click on the **Rename** button.
+    **!!Clone Table!!**, then click on the **Rename** button.
 
      ![](./media/image62.png)
 
@@ -690,7 +690,7 @@ Learn how to create and save a new stored procedure to transform
     ![](./media/image79.png)
 
 10. In the **Rename** dialog box, under the **Name** field, enter
-   **+++Run Create Aggregate Procedure+++**, then click on the
+   **!!Run Create Aggregate Procedure!!**, then click on the
     **Rename** button.
     
     ![](./media/image80.png)
@@ -747,7 +747,7 @@ Learn how to create and save a new stored procedure to transform
     ![](./media/image85.png)
 
 5.  In the **Rename** dialog box, under the **Name** field, enter 
-    **+++Top10CustomersView+++**, then click on the **Rename** button.
+    **!!Top10CustomersView!!**, then click on the **Rename** button.
     
      ![](./media/image86.png)
 
@@ -849,7 +849,7 @@ Fabric portal.
 
     ![](./media/image95.png)
 
-4.  In the **Keep top rows** dialog box, enter **+++10000+++** and
+4.  In the **Keep top rows** dialog box, enter **!!10000!!** and
     Select **OK**.
 
      ![](./media/image96.png)
@@ -920,7 +920,7 @@ Fabric portal.
 
      ![](./media/image108.png)
 
-12. Type **+++Sales Summary+++** to change the name of the query.
+12. Type **!!Sales Summary!!** to change the name of the query.
     Press **Enter** on the keyboard or select anywhere outside the tab
     to save the change.
 
@@ -952,7 +952,7 @@ Microsoft Fabric workspace:
 
      ![](./media/image112.png)
 
-3.  In the **Name** field, enter **+++ShortcutExercise+++** and click on
+3.  In the **Name** field, enter **!!ShortcutExercise!!** and click on
     the **Create** button.
 
      ![](./media/image113.png)
@@ -1072,6 +1072,7 @@ the database.schema.table, as in SQL Server.
       [ShortcutExercise].[dbo].[dimension_customer] AS c
       WHERE Sales.CustomerKey = c.CustomerKey
       GROUP BY Sales.StockItemKey, Sales.Description, c.Customer;
+      
       ```
       
       ![](./media/image130.png)
@@ -1082,7 +1083,7 @@ the database.schema.table, as in SQL Server.
     ![](./media/image131.png)
 
 4.  In the **Rename** dialog box, under the **Name** field, enter
-    **+++Cross-warehouse query+++**, then click on the **Rename**
+    **!!Cross-warehouse query!!**, then click on the **Rename**
     button. 
 
      ![](./media/image132.png)
@@ -1190,7 +1191,7 @@ reports.
 
       ![](./media/image159.png)
 
-14. In the Save your report dialog box, enter **+++Sales Analysis+++**
+14. In the Save your report dialog box, enter **!!Sales Analysis!!**
     as the name of your report and click on the **Save** button.
 
       ![](./media/image160.png)
@@ -1229,8 +1230,7 @@ Warehouse in the last step.
 
      ![](./media/image166.png)
 
-6.  In the **Save your report** dialog box, enter **+++Customer Quick
-    Summary+++** in the name box. In the **Save your report** dialogue,
+6.  In the **Save your report** dialog box, enter **!!Customer Quick Summary!!** in the name box. In the **Save your report** dialogue,
     select **Save**.
 
      ![](./media/image167.png)
