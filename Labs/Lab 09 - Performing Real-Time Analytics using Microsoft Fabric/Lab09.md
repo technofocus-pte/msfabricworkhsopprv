@@ -1,4 +1,4 @@
-# **Use case 01- Performing Real-Time Intelligence using Microsoft Fabric**
+# **Lab 09- Performing Real-Time Intelligence using Microsoft Fabric**
 
 **Introduction**
 
