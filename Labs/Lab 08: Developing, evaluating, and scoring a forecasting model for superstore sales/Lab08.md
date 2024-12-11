@@ -1,4 +1,4 @@
-# **Use Case 03-Develop, evaluate, and score a forecasting model for superstore sales**
+# **Lab 08-Develop, evaluate, and score a forecasting model for superstore sales**
 **Introduction**
 
 In this lab, you'll see Microsoft Fabric's end-to-end data science
