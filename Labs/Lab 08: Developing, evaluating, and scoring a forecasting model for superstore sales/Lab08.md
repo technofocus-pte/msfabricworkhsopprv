@@ -39,7 +39,7 @@ ID, Category, Sub-Category, Product
 Name, Sales, Quantity, Discount, Profit.
 
 1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL: +++https://app.fabric.microsoft.com/home+++ then
+    the following URL: !!https://app.fabric.microsoft.com/home!! then
     press the **Enter** button
 
 2.  In the **Microsoft Azure** window, enter your **Sign-in**
