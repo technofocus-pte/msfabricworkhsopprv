@@ -95,56 +95,17 @@ items.
 
     ![](./media/image4.png)
 
-5.  You’ll be directed to Power BI Home page.
-
-    ![](./media/image5.png)
-
-## **Task 2: Start the Microsoft Fabric trial**
-
-Follow these steps to start your Fabric trial.
-
-1.  On **Power BI Home** page, click on the **Account manager** on the
-    right side. In the Account manager blade, navigate and
-    select **Start trial as shown in the below image.**
-
-    ![](./media/image6.png)
-
-2.  If prompted, agree to the terms and then select **Activate**.
-
-    ![](./media/image7.png)
-
-3.  Once your trial capacity is ready, you receive a confirmation
-    message. Select **Fabric Home Page** to begin working in Fabric.
-
-    ![](./media/image8.png)
-
-4.  Open your Account manager again. Notice that you now have a heading
-    for **Trial status**. Your Account manager keeps track of the number
-    of days remaining in your trial. You will also see the countdown in
-    your Fabric menu bar when you work in a product experience.
-
-    ![](./media/image9.png)
-
-## Task 3: Create a workspace
+## Task 2: Create a workspace
 
 Before working with data in Fabric, create a workspace with the Fabric
 trial enabled.
 
-1.  On the **Microsoft Fabric** home page, select the **Power BI**
+1.  On the **Microsoft Fabric** home page, select the **+ New workspace**
     template.
 
-    ![](./media/image10.png)
+    ![](./media/a2.png)
 
-2.  In the **Power BI Home** page menu bar on the left,
-    select **Workspaces** (the icon looks similar to 🗇).
-
-    ![](./media/image11.png)
-
-3.  In the Workspaces pane Select **+** **New workspace**.
-       [](./media/image12.png)
-     
-
-4.  In the **Create a workspace tab**, enter the following details and
+2.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
 
     |     |    |
@@ -165,18 +126,12 @@ trial enabled.
 
       ![](./media/image16.png)
 
-6.  In the **Power BI Fabric Lakehouse Tutorial-XX** page, click on the
-    **Data Warehouse** icon located at the bottom left and select **Data
-    Warehouse** under Datascience.
+## Task 3: Create a Warehouse in Microsoft Fabric
 
-     ![](./media/image17.png)
+1.  In the **Fabric** page,click on **+New item** button, then select **Warehouse**
+     ![](./media/a2.png)
 
-## Task 4: Create a Warehouse in Microsoft Fabric
-
-1.  In the **Synapse** **Data Warehouse** page, select **Warehouse** to
-    create a lakehouse.
-
-     ![](./media/image18.png)
+     ![](./media/a6.png)
 
 2.  On the **New warehouse** dialog,enter +++WideWorldImporters+++ and click on the **Create**
     button.
