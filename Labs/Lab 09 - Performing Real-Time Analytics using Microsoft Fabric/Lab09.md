@@ -60,7 +60,7 @@ KQL queries.
 ## Task 1: Sign in to Power BI account and sign up for the free 
 
 1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL: +++https://app.fabric.microsoft.com/+++ then
+    the following URL: !!https://app.fabric.microsoft.com/!! then
     press the **Enter** button.
 
       ![](./media/image6.png)
@@ -79,61 +79,22 @@ KQL queries.
 
      ![](./media/image9.png)
 
-5.  You’ll be directed to Power BI Home page.
 
-      ![](./media/image10.png)
-
-## Task 2: Start the Microsoft Fabric trial
-
-Follow these steps to start your Fabric trial.
-
-1.  On **Power BI Home** page, click on the **Account manager** on the
-    right side. In the Account manager blade, navigate and
-    select **Start trial as shown in the below image.**
-
-      ![](./media/image11.png)
-
-2.  If prompted, agree to the terms and then select **Activate**.
-
-      ![](./media/image12.png)
-
-3.  Once your trial capacity is ready, you receive a confirmation
-    message. Select **Fabric Home Page** to begin working in Fabric.
-
-     ![](./media/image13.png)
-
-4.  Open your Account manager again. Notice that you now have a heading
-    for **Trial status**. Your Account manager keeps track of the number
-    of days remaining in your trial. You will also see the countdown in
-    your Fabric menu bar when you work in a product experience.
-
-     ![](./media/image14.png)
-
-## Task 3: Create a workspace 
+## Task 2: Create a workspace 
 
 Before working with data in Fabric, create a workspace with the Fabric
 trial enabled.
 
-1.  In the **Microsoft Fabric** home page, select the **Power BI**
-    template.
+1.  In the Workspaces pane, select **+New workspace**.
 
-     ![](./media/image15.png)
+     ![](./media/a2.png)
 
-2.  In the **Power BI Home** page menu bar on the left,
-    select **Workspaces** (the icon looks similar to 🗇).
-
-     ![](./media/image16.png)
-
-3.  In the Workspaces pane, select **+New workspace**.
-
-     ![](./media/image17.png)
-
-4.  In the **Create a workspace tab**, enter the following details and
+2.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
 
       |   |   |
       |---|----|
-      |Name|+++Fabric Real-Time AnalyticsXX+++(XX can be a unique number) |
+      |Name|!!Fabric Real-Time AnalyticsXX!!(XX can be a unique number) |
       |Advanced|	Under License mode, select Trial|
       |Default| storage format	Small dataset storage format|
 
@@ -148,22 +109,19 @@ trial enabled.
 
     ![](./media/image21.png)
 
-## **Task 4:** [**Create a KQL Database**](https://github.com/microsoft/FabricRTA-in-a-Day/blob/main/Lab1.md#challenge-1-create-a-kql-database)
+## **Task 4:** Create a KQL Database
 
 Kusto query language (KQL) is used to query static or streaming data in
 a table that is defined in a KQL database. To analyze the sales data,
 you must create a table in a KQL database and ingest the data from the
 file.
 
-1.  At the bottom left of the Power BI portal, select the **Power
-    BI** icon and switch to the **Real-Time Intelligence** experience.
-
-     ![](./media/image22.png)
- 
-     ![](./media/image23.png)
-
+1. In the **Fabric** workspace page, navigate and click on
+    **+New item** button, then select **Eventhouse.**
+      ![](./media/a8.png)
+   
 2.  In the **New Eventhouse** dialog box, enter the **Eventhouse name**
-    as +++FabricRTA+++ (or new database with a name of your choice)
+    as !!FabricRTA!! (or new database with a name of your choice)
     and click on **Create** button.
 
    **Note**: Remove any extra space before and after **FabricRTA.**
@@ -187,7 +145,7 @@ create it.
       ![](./media/image27.png)
 
 3.  In the **New KQL Queryset** dialog box, enter the **KQL Query name**
-    as **+++querysetXX+++**(or new database with a name of your choice)
+    as **!!querysetXX!!**(or new database with a name of your choice)
     and click on **Create** button.
 
       Note: KQL Query name should be alphanumeric characters, underscores,
@@ -203,7 +161,7 @@ create it.
     ![](./media/image30.png)
 5.  Now you can write a simple KQL query:
    
-     +++print "Hello World"+++
+     !!print "Hello World"!!
 
       ![](./media/image31.png)
 
@@ -273,7 +231,7 @@ Azure blob storage.
 
 4.  In the **Get data** tab, select the existing table as **logsRaw**.
     Under the Configure the data source tab enter the **URI :**
-    +++https://adxsamplefiles.blob.core.windows.net/publiccsvsamples/logsbenchmark-onegb/2014+++    
+    !!https://adxsamplefiles.blob.core.windows.net/publiccsvsamples/logsbenchmark-onegb/2014!!    
       ![](./media/image39.png)
 
 5.  In the **Get data** tab, click on the **+** and click on **Next**
