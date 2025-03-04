@@ -121,11 +121,10 @@ trial enabled.
 
        ![](./media/image15.png)
 
-5.  Wait for the deployment to complete. It takes 2-3 minutes to
+3.  Wait for the deployment to complete. It takes 2-3 minutes to
     complete. When your new workspace opens, it should be empty.
 
-      ![](./media/image16.png)
-
+     
 ## Task 3: Create a Warehouse in Microsoft Fabric
 
 1.  In the **Fabric** page,click on **+New item** button, then select **Warehouse**
