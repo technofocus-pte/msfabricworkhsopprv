@@ -63,21 +63,11 @@ trial enabled.
 
      ![](./media/image4.png)
 
-5.  In the **Microsoft Fabric** home page, select the **Power BI**
-    template.
+5.  Create a new Eventhouse by clicking on the **+New workshop** button in the navigation bar.
 
-     ![](./media/image5.png)
+     ![](./media/a2.png)
 
-6.  In the **Power BI Home** page left-sided navigation bar,
-    select **Workspaces** (the icon looks similar to 🗇).
-
-      ![](./media/image6.png)
-
-7.  In the Workspaces pane, select **+New workspace**.
-
-     ![](./media/image7.png)
-
-8.  In the **Create a workspace** tab, enter the following details and
+6.  In the **Create a workspace** tab, enter the following details and
     click on the **Apply** button.
     |                          |                                               |
     |-----------------------|------------------------------------------------- |
@@ -93,11 +83,12 @@ trial enabled.
     minutes.
 
 11. In the **Data-FactoryXX** workspace page, navigate and click on
-    **+New** button, then select **Lakehouse.**
+    **+New item** button, then select **Lakehouse.**
+    ![](./media/a2.png)
 
-     ![](./media/image11.png)
+     ![](./media/a4.png)
 
-12. In the **New lakehouse** dialog box, enter
+13. In the **New lakehouse** dialog box, enter
     **!!DataFactoryLakehouse!!** in the **Name** field, click on the
     **Create** button and open the new lakehouse.
 
@@ -105,7 +96,7 @@ trial enabled.
 
      ![](./media/image13.png)
 
-13. Now, click on **Data-FactoryXX** on the left-sided navigation pane.
+14. Now, click on **Data-FactoryXX** on the left-sided navigation pane.
 
     ![](./media/image14.png)
 
