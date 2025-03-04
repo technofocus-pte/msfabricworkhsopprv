@@ -71,19 +71,9 @@ trial enabled.
 
      ![](./media/image4.png)
 
-5.  In the **Microsoft Fabric** home page, select the **Power BI**
-    template.
+5.  Create a new Eventhouse by clicking on the **+New workshop** button in the navigation bar.
 
-     ![](./media/image5.png)
-
-6.  In the **Power BI Home** page menu bar on the left,
-    select **Workspaces** (the icon looks similar to 🗇).
-
-     ![](./media/image6.png)
-
-7.  In the Workspaces pane, select **+** **New workspace**.
-
-      ![](./media/image7.png)
+     ![](./media/a2.png)
 
 8.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
@@ -109,13 +99,12 @@ Now that you have a workspace, it’s time to switch to the **Data
 engineering** experience in the portal and create a data lakehouse for
 the data files you’re going to analyze.
 
-1.  At the bottom left of the Power BI portal, select the **Power
-    BI** icon and switch to the **Data Engineering** experience.
+1. In the **Fabric** workspace page, navigate and click on
+    **+New item** button, then select **Lakehouse.**
 
-2.  In the **Synapse Data Engineering** home page, Select
-    **Lakehouse(Preview)** under **New** pane.
+      ![](./media/a3.png)
 
-      ![](./media/image12.png)
+     ![](./media/a5.png)
 
 3.  In the **New lakehouse** dialog box, enter
     **+++FabricData_Sciencelakehouse+++** in the **Name** field, click on the
@@ -132,11 +121,6 @@ the data files you’re going to analyze.
     endpoint**.
 
      ![](./media/image16.png)
-
-10. At the bottom left of the Power BI portal, select the **Data
-    Engineering** icon and switch to the **Data Science** experience.
-
-     ![](./media/image17.png)
 
 ## **Task 3: Import tutorial notebooks**
 
