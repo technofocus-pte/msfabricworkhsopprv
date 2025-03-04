@@ -127,7 +127,7 @@ the data files you’re going to analyze.
 1.  On the Data science experience homepage, select **Import
     notebook** and upload the notebook files.
 
-     ![](./media/image18.png)
+     ![](./media/a7.png)
 
 2.  On the **Import status** pane that appears on the right side, click
     on **Upload** button and then browse to
