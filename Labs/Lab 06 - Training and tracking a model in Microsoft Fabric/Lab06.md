@@ -56,10 +56,12 @@ with *notebooks*, *experiments*, and *models* in Microsoft Fabric.
 
      ![](./media/image5.png)
 
-## Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
+## Task 1: Create a workspace
 
+Before working with data in Fabric, create a workspace with the Fabric
+trial enabled.
 1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL:+++https://app.fabric.microsoft.com/+++ ,
+    the following URL:!!https://app.fabric.microsoft.com/!! ,
     then press the **Enter** button.
 
      ![](./media/image6.png)
@@ -78,57 +80,22 @@ with *notebooks*, *experiments*, and *models* in Microsoft Fabric.
 
      ![](./media/image9.png)
 
-5.  You’ll be directed to Power BI Home page.
 
-     ![](./media/image10.png)
-
-6.  On **Power BI Home** page, click on the **Account manager** on the
-    right side. In the Account manager blade, navigate and
-    select **Start trial as shown in the below image.**
-
-     ![](./media/image11.png)
-
-7.  If prompted, agree to the terms and then select **Activate**.
-
-     ![](./media/image12.png)
-
-8.  Once your trial capacity is ready, you receive a confirmation
-    message. Select **Fabric Home Page** to begin working in Fabric.
-
-      ![](./media/image13.png)
-
-9.  Open your Account manager again. Notice that you now have a heading
-    for **Trial status**. Your Account manager keeps track of the number
-    of days remaining in your trial. You will also see the countdown in
-    your Fabric menu bar when you work in a product experience.
-
-      ![](./media/image14.png)
-
-## Task 2: Create a workspace
-
-Before working with data in Fabric, create a workspace with the Fabric
-trial enabled.
-
-1.  In the **Microsoft Fabric** home page, select the **Power BI**
+5.  In the **Microsoft Fabric** home page, select the **Power BI**
     template.
 
      ![](./media/image15.png)
 
-2.  In the **Power BI Home** page menu bar on the left,
-    select **Workspaces** (the icon looks similar to 🗇).
+6.  Create a new Eventhouse by clicking on the **+New workshop** button in the navigation bar.
 
-     ![](./media/image16.png)
+     ![](./media/a2.png)
 
-3.  In the Workspaces pane Select **+** **New workspace**.
-
-     ![](./media/image17.png)
-
-4.  In the **Create a workspace tab**, enter the following details and
+7.  In the **Create a workspace tab**, enter the following details and
     click on the **Apply** button.
 
     |	                      |                                                   |
     |-----------------------|---------------------------------------------------|
-    |Name                   |+++TrainModel_FabricXX+++ (XX can be a unique number) 	  |
+    |Name                   |!!TrainModel_FabricXX!! (XX can be a unique number) 	  |
     |Advanced               |Under License mode, select Trial                 	|
     |Default storage format |Small dataset storage format   	                  |
     
@@ -145,18 +112,15 @@ Now that you have a workspace, it’s time to switch to the *Data
 science* experience in the portal and create a data lakehouse for the
 data files you’re going to analyze.
 
-1.  At the bottom left of the Power BI portal, select the **Power
-    BI** icon and switch to the **Data Engineering** experience.
+1.   In the **Fabric** workspace page, navigate and click on
+    **+New item** button, then select **Lakehouse.**
 
-     ![](./media/image21.png)
+     ![](./media/a3.png)
 
-2.  In the **Synapse** **Data engineering** **Home** page, select
-    **Lakehouse** under **New** pane.
-
-      ![](./media/image22.png)
+     ![](./media/a5.png)
 
 3.  In the **New lakehouse** dialog box, enter
-    **+++TrainModel_Lakehouse+++** in the **Name** field, click on the
+    **!!TrainModel_Lakehouse!!** in the **Name** field, click on the
     **Create** button.
 
       ![](./media/image23.png)
@@ -207,7 +171,7 @@ rendered.
 5.  Use the **🖉 (Edit**) button to switch the cell to editing mode, then
     delete the content and enter the following text:
 
-     +++# Train a machine learning model and track with MLflow+++
+     !!# Train a machine learning model and track with MLflow!!
     
      ![](./media/image31.png)
      ![](./media/image32.png)
