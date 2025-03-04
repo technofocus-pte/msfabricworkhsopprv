@@ -1,4 +1,4 @@
-# Lab 01: Creating a Lakehouse, ingesting sample data and building a report
+# Use case 1: Creating a Lakehouse, ingesting sample data and building a report
 
 **Introduction**
 
@@ -64,7 +64,7 @@ analysis.
 
 # Exercise 1: Setup Lakehouse end-to-end scenario 
 
-## Task 1: Sign in to Power BI account and sign up for the free [Microsoft Fabric trial](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
+## Task 1: Sign in to Power BI account and sign up for the free 
 
 1.  Open your browser, navigate to the address bar, and type or paste
     the following URL:!!https://app.fabric.microsoft.com/!!
@@ -72,7 +72,7 @@ analysis.
 
       ![](./media/image1.png)
 
-2.  In the **Microsoft Fabric** window, enter your **Microsoft 365**
+2.  In the **Microsoft Fabric** window, enter your 
     credentials, and click on the **Submit** button.
 
       ![](./media/image2.png)
@@ -88,33 +88,33 @@ analysis.
 
 5.  You’ll be directed to Power BI Home page.
 
-     ![](./media/image5.png)
+     ![](./media/a1.png)
 
 ## Task 2: Start the Microsoft Fabric trial
 
 Follow these steps to start your Fabric trial.
 
-1.  On **Power BI Home** page, click on the **Account manager** on the
+1.  On **Fabric** page, click on the **Account manager** on the
     right side. In the Account manager blade, navigate and
     select **Start trial** as shown in the below image.
 
-     ![](./media/image6.png)
+     ![](./media/aa2.png)
 
-2.  If prompted, agree to the terms and then select **Start trial**.
+2.  If prompted, agree to the terms and then select **Activate**.
 
-     ![](./media/new1-1.png)
+     ![](./media/aa3.png)
 
 3.  Once your trial capacity is ready, you receive a confirmation
-    message. Select **Fabric Home Page** to begin working in Fabric.
+    message. Select **Got it** to begin working in Fabric.
 
-      ![](./media/image8.png)
+      ![](./media/aa4.png)
 
 4.  Open your Account manager again. Notice that you now have a heading
     for **Trial status**. Your Account manager keeps track of the number
     of days remaining in your trial. You will also see the countdown in
     your Fabric menu bar when you work in a product experience.
 
-     ![](./media/image9.png)
+     ![](./media/aa5.png)
 
 # Exercise 2: Build and implement an end-to-end lakehouse for your organization
 
@@ -125,57 +125,51 @@ the items needed for this lakehouse tutorial, which includes lakehouse,
 dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and
 reports.
 
-1.  Go back to **Power BI** window. On the left side navigation menu of
-    Power BI Home page, navigate and click on **Workspaces**.
+1.  Fabric home page, select **+New workspace** tile.
 
-     ![](./media/image16.png)
+     ![](./media/a1.png)
 
-2.  In the Workspaces pane, click on **+** **New workspace** button.
-
-      ![](./media/image17.png)
-
-3.  In the **Create a workspace** pane that appears on the right side,
+2.  In the **Create a workspace** pane that appears on the right side,
     enter the following details, and click on the **Apply** button.
 
        |   |    |
        |----|---|
-       |Name|	!!Fabric Lakehouse Tutorial-XX!! (XX can be a unique number) (here, we entered Fabric Lakehouse Tutorial-29)|
+       |Name|	!!Fabric Lakehouse Tutorial-XXXXX!! (XXXXX can be Lab instant ID) |
        |Description	|This workspace contains all the items for the lakehouse tutorial |
        |Advanced	|Under License mode, select Trial|
        |Default |storage format	Small dataset storage format|
        |Template apps|	Check the Develop template apps|
 
+     Note: To find your lab instant ID, select 'Help' and copy the instant ID.![](./media/image217.png)
+    
        ![](./media/image18.png)
 
       ![](./media/image19.png)
 
       ![](./media/image20.png)
 
-4.  Wait for the deployment to complete. It takes 2-3 minutes to
+3.  Wait for the deployment to complete. It takes 2-3 minutes to
     complete.
 
      ![](./media/image21.png)
 
 ## **Task 2: Create a lakehouse**
 
-1.  In the **Power BI Fabric Lakehouse Tutorial-XX** page, click on the
-    **Power BI** icon located at the bottom left and select **Data
-    Engineering** under Synapse.
+1.  Create a new lakehouse by clicking on the **+New item** button in the navigation bar.
 
-     ![](./media/new0.png)
+     ![](./media/a3.png)
+    
+2.  Click on the "**Lakehouse**" tile.
 
-2.  In the **Synapse** **Data Engineering** **Home** page,
-    select **Lakehouse** to create a lakehouse.
+     ![](./media/aa6.png)
 
-     ![](./media/new2.png)
-
-3.  In the **New lakehouse** dialog box, enter **!!wwilakehouse!!** in
+3.  In the **New lakehouse** dialog box, enter **wwilakehouse** in
     the **Name** field, click on the **Create** button and open the new
     lakehouse.
 
     **Note**: Ensure to remove space before **wwilakehouse**.
  
-     ![](./media/new3.png)
+     ![](./media/aa7.png)
  
      ![](./media/image25.png)
 
@@ -251,7 +245,7 @@ reports.
     as shown in the below image, then click on the play icon to **Run**
     the script.
 
-        SQLCopy
+      
         ```
         SELECT BuyingGroup, Count(\*) AS Total
 
@@ -259,24 +253,25 @@ reports.
 
         GROUP BY BuyingGroup
         ```
-    ![](./media/image213.png)
+    
+     ![](./media/image213.png)
 
     **Note**: If you encounter an error during the execution of the script,
     then crosscheck the script syntax with the above image.
 
     ![](./media/image213.png)
-12. Previously all the lakehouse tables and views were automatically
+13. Previously all the lakehouse tables and views were automatically
     added to the semantic model. With the recent updates, for new
     lakehouses, you have to manually add your tables to the semantic
     model.
 
-13. From the lakehouse **Reporting** tab, select **Manage default Power
+14. From the lakehouse **Reporting** tab, select **Manage default Power
     BI semantic model** and select the tables that you want to add to
     the semantic model.
 
      ![](./media/image214.png)
 
-14. In **Manage default semantic model** tab, select
+15. In **Manage default semantic model** tab, select
     the **dimension_customer** table and click on **Confirm.**
 
      ![](./media/image215.png)
@@ -316,7 +311,7 @@ reports.
       ![](./media/image54.png)
 
 6.  In the **Save your replort** dialog box, enter a name for your
-    report as !!dimension_customer-report!! and select **Save**
+    report as !!dimension_customer-report!! and select **Save.**
 
      ![](./media/new7.png)
 
@@ -329,7 +324,7 @@ reports.
 In this exercise, you ingest additional dimensional and fact tables from
 the Wide World Importers (WWI) into the lakehouse.
 
-## ** Task 1: Ingest data**
+## **Task 1: Ingest data**
 
 1.  Select **Workspaces** in the left navigation pane, and then select
     your new workspace (i.e., Fabric Lakehouse Tutorial-XX) from
@@ -366,14 +361,14 @@ the Wide World Importers (WWI) into the lakehouse.
 6.  In the **Connect to data source** window, enter the details from the
     table below and select **Next**.
 
-    |   |   |
-    |---|---|
-    |Property |	Value|
-    |URL|	!!https://assetsprod.microsoft.com/en-us/wwi-sample-dataset.zip!!|
-    |Connection	|Create a new connection|
-    |Connection name	|!!wwisampledata!! |
-    |Data gateway|	None|
-    |Authentication kind|	Anonymous|
+        |   |   |
+        |---|---|
+        |Property |	Value|
+        |URL|	!!https://assetsprod.microsoft.com/en-us/wwi-sample-dataset.zip!!|
+        |Connection	|Create a new connection|
+        |Connection name	|!!wwisampledata!! |
+        |Data gateway|	None|
+        |Authentication kind|	Anonymous|
 
      ![](./media/image64.png)
 
@@ -393,25 +388,26 @@ the Wide World Importers (WWI) into the lakehouse.
  
       ![](./media/image67.png)
 
-9.  Choose the **File format** as **Binary** for the destination.
+9.  Choose the **File format** shoul be  empty for the destination.
     Click **Next** and then **Save+Run**. You can schedule pipelines to
     refresh data periodically. In this tutorial, we only run the
     pipeline once. The data copy process takes approximately 15-19
     minutes to complete.
-
-      ![](./media/image68.png)
+        ![](./media/Picture7.png)
+       ![](./media/pic6.png)
+10.	Now,you can see that validation will fail. Click on the **pipeline validation output**
  
-      ![](./media/image69.png)
+      ![](./media/pic3.png)
+11.	In the **destination** tab, dropdown the File format and select **Binary**.
  
-      ![](./media/image70.png)
- 
-      ![](./media/image71.png)
- 
+      ![](./media/pic4.png)
+12.	Now click on the Run button
+       ![](./media/pic5.png)
       ![](./media/image72.png)
  
       ![](./media/image73.png)
 
-10. Under the Output tab, , select **Copy_a1n** to look at the details
+13. Under the Output tab, , select **Copy_a1n** to look at the details
     of the data transfer. After seeing the **Status** as **Succeeded**,
     click on the **Close** button.
 
@@ -419,17 +415,17 @@ the Wide World Importers (WWI) into the lakehouse.
  
       ![](./media/image75.png)
 
-11. After the successful execution of the pipeline, go to your lakehouse
+14. After the successful execution of the pipeline, go to your lakehouse
     (**wwilakehouse**) and open the explorer to see the imported data.
 
       ![](./media/image76.png)
 
-12. Verify that the folder **WideWorldImportersDW** is present in
+15. Verify that the folder **WideWorldImportersDW** is present in
     the **Explorer** view and contains data for all tables.
 
      ![](./media/image77.png)
 
-13. The data is created under the **Files** section of the lakehouse
+16. The data is created under the **Files** section of the lakehouse
     explorer. A new folder with GUID contains all the needed data.
     Rename the GUID to !!wwi-raw-data!!
 
@@ -450,7 +446,7 @@ that data and prepare it for creating delta tables.
 
      ![](./media/image80.png)
 
-2.  2.	In the **Synapse Data Engineering** page, navigate to **Import** section, click on **Notebook** and click on **From this computer**
+2.  2.	In the **Home** page, navigate to **Import** section, click on **Notebook** and click on **From this computer**
 
      ![](./media/new9.png)
 
@@ -550,7 +546,7 @@ that data and prepare it for creating delta tables.
      **Note**: In case, you are unable to see the output, then click on the
      horizontal lines on the left side of **Spark jobs**.
     
-      ```
+        ```
         from pyspark.sql.functions import col, year, month, quarter
         
         table_name = 'fact_sale'
@@ -561,7 +557,7 @@ that data and prepare it for creating delta tables.
         df = df.withColumn('Month', month(col("InvoiceDateKey")))
         
         df.write.mode("overwrite").format("delta").partitionBy("Year","Quarter").save("Tables/" + table_name)
-     ```
+        ```
       
        ![](./media/image93.png)
        ![](./media/image94.png)
@@ -575,7 +571,7 @@ that data and prepare it for creating delta tables.
     parameter.
 
 9.  Select the cell, replace the code, and click the **Run** icon that appears to the left of the cell when you hover over it
-    
+
         ```
         from pyspark.sql.types import *
         def loadFullDataFromSource(table_name):
@@ -592,28 +588,28 @@ that data and prepare it for creating delta tables.
         for table in full_tables:
             loadFullDataFromSource(table)
         ```
-
+  
        ![](./media/image95.png)
       ![](./media/image96.png)
-10. To validate the created tables, click and select refresh on
+11. To validate the created tables, click and select refresh on
     the **Tables**. The tables appear.
      ![](./media/image97.png)
       ![](./media/image98.png)
 
-11. Go the items view of the workspace again, select **Fabric Lakehouse
+12. Go the items view of the workspace again, select **Fabric Lakehouse
     Tutorial-XX** and select the **wwilakehouse** lakehouse to open it.
 
      ![](./media/image99.png)
  
      ![](./media/image100.png)
 
-12. Now, open the second notebook. In the lakehouse view, dropdown the
+13. Now, open the second notebook. In the lakehouse view, dropdown the
     **Open notebook** and select **Existing notebook** from the top
     navigation menu.
 
      ![](./media/image101.png)
 
-13. From the list of Open existing notebook, select the **02 - Data
+14. From the list of Open existing notebook, select the **02 - Data
     Transformation - Business** **Aggregation** notebook and click on
     the **Open**.
 
@@ -655,7 +651,7 @@ that data and prepare it for creating delta tables.
     In this cell, you create three different Spark dataframes, each
     referencing an existing delta table.
    
-   PythonCopy
+   
     ```
     df_fact_sale = spark.read.table("wwilakehouse.fact_sale") 
     df_dimension_date = spark.read.table("wwilakehouse.dimension_date")
@@ -877,7 +873,7 @@ frequent updates at the source.
 
       ![](./media/image122.png)
 
-**Add a title:**
+    **Add a title:**
 
 1.  In the Ribbon, select **Text box**. Type in **WW Importers Profit
     Reporting**. **Highlight** the **text** and increase size to **20**.
@@ -1003,7 +999,7 @@ the workspace you created for this tutorial.
     left-hand navigation menu. It opens the workspace item view.
 
      ![](./media/image142.png)
-2.  Select the ***...*** option under the workspace name and
+2.  Select the **...** option under the workspace name and
     select **Workspace settings**.
 
     ![](./media/image143.png)
@@ -1030,5 +1026,3 @@ delta tables, and building reports in Power BI for effective data
 analysis. The objectives aim to provide hands-on experience in utilizing
 Microsoft Fabric and Power BI for data management and reporting
 purposes.
-
-## 
