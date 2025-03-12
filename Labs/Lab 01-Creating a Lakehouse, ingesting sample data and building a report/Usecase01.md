@@ -64,7 +64,7 @@ analysis.
 
 # Exercise 1: Setup Lakehouse end-to-end scenario 
 
-## Task 1: Sign in to Power BI account and sign up for the free 
+## Task 1: Sign in to Power BI account 
 
 1.  Open your browser, navigate to the address bar, and type or paste
     the following URL:!!https://app.fabric.microsoft.com/!!
@@ -90,31 +90,6 @@ analysis.
 
      ![](./media/a1.png)
 
-## Task 2: Start the Microsoft Fabric trial
-
-Follow these steps to start your Fabric trial.
-
-1.  On **Fabric** page, click on the **Account manager** on the
-    right side. In the Account manager blade, navigate and
-    select **Start trial** as shown in the below image.
-
-     ![](./media/aa2.png)
-
-2.  If prompted, agree to the terms and then select **Activate**.
-
-     ![](./media/aa3.png)
-
-3.  Once your trial capacity is ready, you receive a confirmation
-    message. Select **Got it** to begin working in Fabric.
-
-      ![](./media/aa4.png)
-
-4.  Open your Account manager again. Notice that you now have a heading
-    for **Trial status**. Your Account manager keeps track of the number
-    of days remaining in your trial. You will also see the countdown in
-    your Fabric menu bar when you work in a product experience.
-
-     ![](./media/aa5.png)
 
 # Exercise 2: Build and implement an end-to-end lakehouse for your organization
 
@@ -132,21 +107,18 @@ reports.
 2.  In the **Create a workspace** pane that appears on the right side,
     enter the following details, and click on the **Apply** button.
 
-       |   |    |
-       |----|---|
-       |Name|	!!Fabric Lakehouse Tutorial-XXXXX!! (XXXXX can be Lab instant ID) |
-       |Description	|This workspace contains all the items for the lakehouse tutorial |
-       |Advanced	|Under License mode, select Trial|
-       |Default |storage format	Small dataset storage format|
-       |Template apps|	Check the Develop template apps|
+   |    |    |
+   |----|-------|
+   |Name |!!Fabric Lakehouse Tutorial-XXXXX!!(XXXXX can be Lab instant ID) |
+   |Description	|This workspace contains all the items for the lakehouse tutorial |
+   |Advanced	|Under License mode, select Trial|
+   |Default |storage format	Small dataset storage format|
+   |Template apps|Check the Develop template apps|
 
-     Note: To find your lab instant ID, select 'Help' and copy the instant ID.![](./media/image217.png)
-    
-       ![](./media/image18.png)
-
-      ![](./media/image19.png)
-
-      ![](./media/image20.png)
+  Note: To find your lab instant ID, select 'Help' and copy the instant ID.![](./media/image217.png)
+    ![](./media/image18.png)
+    ![](./media/image19.png)
+    ![](./media/image20.png)
 
 3.  Wait for the deployment to complete. It takes 2-3 minutes to
     complete.
