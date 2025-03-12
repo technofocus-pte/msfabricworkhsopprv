@@ -333,14 +333,14 @@ the Wide World Importers (WWI) into the lakehouse.
 6.  In the **Connect to data source** window, enter the details from the
     table below and select **Next**.
 
-        |   |   |
-        |---|---|
-        |Property |	Value|
-        |URL|	!!https://assetsprod.microsoft.com/en-us/wwi-sample-dataset.zip!!|
-        |Connection	|Create a new connection|
-        |Connection name	|!!wwisampledata!! |
-        |Data gateway|	None|
-        |Authentication kind|	Anonymous|
+    |   |   |
+    |---|---|
+    |Property |	Value|
+    |URL|!!https://assetsprod.microsoft.com/en-us/wwi-sample-dataset.zip!!|
+    |Connection	|Create a new connection|
+    |Connection name	|!!wwisampledata!! |
+    |Data gateway|	None|
+    |Authentication kind|	Anonymous|
 
      ![](./media/image64.png)
 
