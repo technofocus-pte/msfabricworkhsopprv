@@ -60,13 +60,12 @@ transform, and load* (ETL) process.
 
      ![](./media/image120.png)
 
-4.  In the **Connect to data source** pane, under **Connection
-    settings**, select **Upload file** radio button, then
-    click on **Browse** button and browse your VM **C:\LabFiles**, then
-    select the **orders file** and click on the **Open** button.
+4.  In the Connect to data source pane
 
-     ![](./media/new15.png)
-     ![](./media/new16.png)
+    a) Link to file: Selected
+    
+    b) File path or URL: !!https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv!!
+       ![](./media/newa1.png)
 
 6.  In the **Connect to data source** pane, under **Connection
     credentials,** enter the following details and click on the **Next**
@@ -78,7 +77,7 @@ transform, and load* (ETL) process.
 
     - **Authentication kind**: Organizational account
 
-      ![](./media/image122.png)
+      ![](./media/newa2.png)
 
 7.  In **Preview file data** pane, click on **Create** to create the
     data source.
