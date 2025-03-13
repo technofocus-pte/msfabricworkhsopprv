@@ -628,7 +628,7 @@ notebook with a meaningful name and end the Spark session.
 
     ![](./media/image114.png)
 
-2.  Set the **Name** of the notebook to +++Explore Sales Orders+++,
+2.  Set the **Name** of the notebook to !!Explore Sales Orders!!,
     and then close the settings pane.
 
      ![](./media/image115.png)
