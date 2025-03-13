@@ -50,7 +50,7 @@ Before working with data in Fabric, create a workspace with the Fabric
 trial enabled.
 
 1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL: +++https://app.fabric.microsoft.com/+++ then press
+    the following URL: !!https://app.fabric.microsoft.com/!! then press
     the **Enter** button.
 
   **Note**: If you are directed to Microsoft Fabric Home page, then skip
@@ -79,7 +79,7 @@ trial enabled.
     click on the **Apply** button.
     |                       |                                           |
     |-----------------------|-------------------------------------------|
-    |Name           |+++Data-ScienceXX+++(XX can be a unique number) |
+    |Name           |!!Data-ScienceXX!!(XX can be a unique number) |
     |Advanced      |Under License mode, select Trial   |
     |Default storage format |Small dataset storage format	            |
      ![](./media/image8.png)
@@ -107,7 +107,7 @@ the data files you’re going to analyze.
      ![](./media/a5.png)
 
 3.  In the **New lakehouse** dialog box, enter
-    **+++FabricData_Sciencelakehouse+++** in the **Name** field, click on the
+    **!!FabricData_Sciencelakehouse!!** in the **Name** field, click on the
     **Create** button and open the new lakehouse.
 
       ![](./media/image14.png)
@@ -832,7 +832,7 @@ b)  To determine the average predicted churn rate, replace Measure = in
     the formula bar with:
 
 > PythonCopy
-  +++Churn Rate = AVERAGE(customer_churn_test_predictions[predictions])+++
+  !!Churn Rate = AVERAGE(customer_churn_test_predictions[predictions])!!
       ![](./media/image99.png)
 
 c)  To apply the formula, select the **check mark** in the formula bar.
@@ -861,7 +861,7 @@ b)  Each prediction represents one customer. To determine the total
     number of customers, replace Measure = in the formula bar with:
 
    > PythonCopy
-+++Customers = COUNT(customer_churn_test_predictions[predictions])+++
+!!Customers = COUNT(customer_churn_test_predictions[predictions])!!
      ![](./media/image103.png)
 
 c)  Select the **check mark** in the formula bar to apply the formula.
@@ -877,7 +877,7 @@ c)  Select the **check mark** in the formula bar to apply the formula.
    b.  To determine the churn rate for Germany, replace Measure = in the
        formula bar with:
 
- +++Germany Churn = CALCULATE(customer_churn_test_predictions[Churn Rate], customer_churn_test_predictions[Geography_Germany] = 1)+++
+ !!Germany Churn = CALCULATE(customer_churn_test_predictions[Churn Rate], customer_churn_test_predictions[Geography_Germany] = 1)!!
       ![](./media/image106.png)
 
 This filters the rows down to the ones with Germany as their geography
@@ -896,7 +896,7 @@ a)  **Spain's churn rate**: Select **New measure** in the top ribbon to
 
 b)  Select the **check mark** in the formula bar to apply the formula
 
-+++Spain Churn = CALCULATE(customer_churn_test_predictions[Churn Rate], customer_churn_test_predictions[Geography_Spain] = 1)+++
+!!Spain Churn = CALCULATE(customer_churn_test_predictions[Churn Rate], customer_churn_test_predictions[Geography_Spain] = 1)!!
     ![](./media/image108.png)
 
 c)  France's churn rate: Select **New measure** in the top ribbon to add
@@ -906,7 +906,7 @@ c)  France's churn rate: Select **New measure** in the top ribbon to add
 d)  Select the **check mark** in the formula bar to apply the formula
 
 
-+++France Churn = CALCULATE(customer_churn_test_predictions[Churn Rate], customer_churn_test_predictions[Geography_France] = 1)+++
+!!France Churn = CALCULATE(customer_churn_test_predictions[Churn Rate], customer_churn_test_predictions[Geography_France] = 1)!!
     ![](./media/image109.png)
 
 ## **Task 10: Create new report**
