@@ -244,7 +244,7 @@ experiences, including Data Factory experience.
       ![](./media/image152.png)
 
 9.  In the **Fabric_lakehouse** pane, select the
-    **Gen2_FabricLakehouse** of type Lakehouse.
+    **FabricLakehouse** of type Lakehouse.
 
       ![](./media/image153.png)
 
