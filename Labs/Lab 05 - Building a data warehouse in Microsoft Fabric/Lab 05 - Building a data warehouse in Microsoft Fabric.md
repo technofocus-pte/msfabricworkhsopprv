@@ -132,7 +132,7 @@ trial enabled.
 
      ![](./media/a6.png)
 
-2.  On the **New warehouse** dialog,enter +++WideWorldImporters+++ and click on the **Create**
+2.  On the **New warehouse** dialog,enter !!WideWorldImporters!! and click on the **Create**
     button.
 
      ![](./media/image19.png)
@@ -178,7 +178,7 @@ trial enabled.
     
       ![](./media/image27.png)
 
-8.  On the **General** tab, in the **Name** field, enter +++CD Load dimension_customer+++ .
+8.  On the **General** tab, in the **Name** field, enter !!CD Load dimension_customer!! .
 
      ![](./media/image28.png)
 
@@ -525,7 +525,7 @@ syntax.
      ![](./media/image69.png)
 
 8.  In the **Rename** dialog box, under the **Name** field, enter
-    +++Clone Table in another schema+++. Then, click on **Rename**
+    !!Clone Table in another schema!!. Then, click on **Rename**
     button.
 
      ![](./media/image70.png)
@@ -608,7 +608,7 @@ Learn how to create and save a new stored procedure to transform
     ![](./media/image74.png)
 
 4.  In the **Rename** dialog box, under the **Name** field, enter
-    +++Create Aggregate Procedure+++, then click on the **Rename**
+    !!Create Aggregate Procedure!!, then click on the **Rename**
     button.
 
      ![](./media/image75.png)
