@@ -216,16 +216,11 @@ reports.
     can rename or delete these files based on your need. Paste the code
     as shown in the below image, then click on the play icon to **Run**
     the script.
-
-      
-        ```
-        SELECT BuyingGroup, Count(\*) AS Total
-
-        FROM dimension_customer
-
-        GROUP BY BuyingGroup
-        ```
-    
+    ```
+    SELECT BuyingGroup, Count(*) AS Total
+    FROM dimension_customer
+    GROUP BY BuyingGroup
+    ```     
      ![](./media/image213.png)
 
     **Note**: If you encounter an error during the execution of the script,
@@ -418,7 +413,7 @@ that data and prepare it for creating delta tables.
 
      ![](./media/image80.png)
 
-2.  2.	In the **Home** page, navigate to **Import** section, click on **Notebook** and click on **From this computer**
+2.  In the **Home** page, navigate to **Import** section, click on **Notebook** and click on **From this computer**
 
      ![](./media/new9.png)
 
@@ -518,18 +513,18 @@ that data and prepare it for creating delta tables.
      **Note**: In case, you are unable to see the output, then click on the
      horizontal lines on the left side of **Spark jobs**.
     
-        ```
-        from pyspark.sql.functions import col, year, month, quarter
-        
-        table_name = 'fact_sale'
-        
-        df = spark.read.format("parquet").load('Files/wwi-raw-data/full/fact_sale_1y_full')
-        df = df.withColumn('Year', year(col("InvoiceDateKey")))
-        df = df.withColumn('Quarter', quarter(col("InvoiceDateKey")))
-        df = df.withColumn('Month', month(col("InvoiceDateKey")))
-        
-        df.write.mode("overwrite").format("delta").partitionBy("Year","Quarter").save("Tables/" + table_name)
-        ```
+    ```
+    from pyspark.sql.functions import col, year, month, quarter
+    
+    table_name = 'fact_sale'
+    
+    df = spark.read.format("parquet").load('Files/wwi-raw-data/full/fact_sale_1y_full')
+    df = df.withColumn('Year', year(col("InvoiceDateKey")))
+    df = df.withColumn('Quarter', quarter(col("InvoiceDateKey")))
+    df = df.withColumn('Month', month(col("InvoiceDateKey")))
+    
+    df.write.mode("overwrite").format("delta").partitionBy("Year","Quarter").save("Tables/" + table_name)
+    ```
       
        ![](./media/image93.png)
        ![](./media/image94.png)
@@ -544,22 +539,22 @@ that data and prepare it for creating delta tables.
 
 9.  Select the cell, replace the code, and click the **Run** icon that appears to the left of the cell when you hover over it
 
-        ```
-        from pyspark.sql.types import *
-        def loadFullDataFromSource(table_name):
-            df = spark.read.format("parquet").load('Files/wwi-raw-data/full/' + table_name)
-            df.write.mode("overwrite").format("delta").save("Tables/" + table_name)
-        
-        full_tables = [
-            'dimension_city',
-            'dimension_date',
-            'dimension_employee',
-            'dimension_stock_item'
-            ]
-        
-        for table in full_tables:
-            loadFullDataFromSource(table)
-        ```
+    ```
+    from pyspark.sql.types import *
+    def loadFullDataFromSource(table_name):
+        df = spark.read.format("parquet").load('Files/wwi-raw-data/full/' + table_name)
+        df.write.mode("overwrite").format("delta").save("Tables/" + table_name)
+    
+    full_tables = [
+        'dimension_city',
+        'dimension_date',
+        'dimension_employee',
+        'dimension_stock_item'
+        ]
+    
+    for table in full_tables:
+        loadFullDataFromSource(table)
+    ```
   
        ![](./media/image95.png)
       ![](./media/image96.png)
@@ -623,12 +618,12 @@ that data and prepare it for creating delta tables.
     In this cell, you create three different Spark dataframes, each
     referencing an existing delta table.
    
-   
     ```
     df_fact_sale = spark.read.table("wwilakehouse.fact_sale") 
     df_dimension_date = spark.read.table("wwilakehouse.dimension_date")
     df_dimension_city = spark.read.table("wwilakehouse.dimension_city")
     ```
+
      ![](./media/image104.png)
 
 19. In this cell, you join these tables using the dataframes created
@@ -636,23 +631,21 @@ that data and prepare it for creating delta tables.
     columns, and finally write it as a delta table in
     the **Tables** section of the lakehouse.
 
-        ```
-        sale_by_date_city = df_fact_sale.alias("sale") \
-        .join(df_dimension_date.alias("date"), df_fact_sale.InvoiceDateKey == df_dimension_date.Date, "inner") \
-        .join(df_dimension_city.alias("city"), df_fact_sale.CityKey == df_dimension_city.CityKey, "inner") \
-        .select("date.Date", "date.CalendarMonthLabel", "date.Day", "date.ShortMonth", "date.CalendarYear", "city.City", "city.StateProvince", 
-         "city.SalesTerritory", "sale.TotalExcludingTax", "sale.TaxAmount", "sale.TotalIncludingTax", "sale.Profit")\
-        .groupBy("date.Date", "date.CalendarMonthLabel", "date.Day", "date.ShortMonth", "date.CalendarYear", "city.City", "city.StateProvince", 
-         "city.SalesTerritory")\
-        .sum("sale.TotalExcludingTax", "sale.TaxAmount", "sale.TotalIncludingTax", "sale.Profit")\
-        .withColumnRenamed("sum(TotalExcludingTax)", "SumOfTotalExcludingTax")\
-        .withColumnRenamed("sum(TaxAmount)", "SumOfTaxAmount")\
-        .withColumnRenamed("sum(TotalIncludingTax)", "SumOfTotalIncludingTax")\
-        .withColumnRenamed("sum(Profit)", "SumOfProfit")\
-        .orderBy("date.Date", "city.StateProvince", "city.City")
-        
-        sale_by_date_city.write.mode("overwrite").format("delta").option("overwriteSchema", "true").save("Tables/aggregate_sale_by_date_city")
-        ```
+    ```
+    sale_by_date_city = df_fact_sale.alias("sale") \
+    .join(df_dimension_date.alias("date"), df_fact_sale.InvoiceDateKey == df_dimension_date.Date, "inner") \
+    .join(df_dimension_city.alias("city"), df_fact_sale.CityKey == df_dimension_city.CityKey, "inner") \
+    .select("date.Date", "date.CalendarMonthLabel", "date.Day", "date.ShortMonth", "date.CalendarYear", "city.City", "city.StateProvince", "city.SalesTerritory", "sale.TotalExcludingTax", "sale.TaxAmount", "sale.TotalIncludingTax", "sale.Profit")\
+    .groupBy("date.Date", "date.CalendarMonthLabel", "date.Day", "date.ShortMonth", "date.CalendarYear", "city.City", "city.StateProvince", "city.SalesTerritory")\
+    .sum("sale.TotalExcludingTax", "sale.TaxAmount", "sale.TotalIncludingTax", "sale.Profit")\
+    .withColumnRenamed("sum(TotalExcludingTax)", "SumOfTotalExcludingTax")\
+    .withColumnRenamed("sum(TaxAmount)", "SumOfTaxAmount")\
+    .withColumnRenamed("sum(TotalIncludingTax)", "SumOfTotalIncludingTax")\
+    .withColumnRenamed("sum(Profit)", "SumOfProfit")\
+    .orderBy("date.Date", "city.StateProvince", "city.City")
+    
+    sale_by_date_city.write.mode("overwrite").format("delta").option("overwriteSchema", "true").save("Tables/aggregate_sale_by_date_city")
+    ```
       ![](./media/image105.png)
 
 20. **Approach \#2 (sale_by_date_employee)** - Use Spark SQL to join and
@@ -667,34 +660,34 @@ that data and prepare it for creating delta tables.
     tables, do group by to generate aggregation, and rename a few of the
     columns.
         
-        ```
-        %%sql
-        CREATE OR REPLACE TEMPORARY VIEW sale_by_date_employee
-        AS
-        SELECT
-               DD.Date, DD.CalendarMonthLabel
-         , DD.Day, DD.ShortMonth Month, CalendarYear Year
-              ,DE.PreferredName, DE.Employee
-              ,SUM(FS.TotalExcludingTax) SumOfTotalExcludingTax
-              ,SUM(FS.TaxAmount) SumOfTaxAmount
-              ,SUM(FS.TotalIncludingTax) SumOfTotalIncludingTax
-              ,SUM(Profit) SumOfProfit 
-        FROM wwilakehouse.fact_sale FS
-        INNER JOIN wwilakehouse.dimension_date DD ON FS.InvoiceDateKey = DD.Date
-        INNER JOIN wwilakehouse.dimension_Employee DE ON FS.SalespersonKey = DE.EmployeeKey
-        GROUP BY DD.Date, DD.CalendarMonthLabel, DD.Day, DD.ShortMonth, DD.CalendarYear, DE.PreferredName, DE.Employee
-        ORDER BY DD.Date ASC, DE.PreferredName ASC, DE.Employee ASC
-        ```
+    ```
+    %%sql
+    CREATE OR REPLACE TEMPORARY VIEW sale_by_date_employee
+    AS
+    SELECT
+           DD.Date, DD.CalendarMonthLabel
+     , DD.Day, DD.ShortMonth Month, CalendarYear Year
+          ,DE.PreferredName, DE.Employee
+          ,SUM(FS.TotalExcludingTax) SumOfTotalExcludingTax
+          ,SUM(FS.TaxAmount) SumOfTaxAmount
+          ,SUM(FS.TotalIncludingTax) SumOfTotalIncludingTax
+          ,SUM(Profit) SumOfProfit 
+    FROM wwilakehouse.fact_sale FS
+    INNER JOIN wwilakehouse.dimension_date DD ON FS.InvoiceDateKey = DD.Date
+    INNER JOIN wwilakehouse.dimension_Employee DE ON FS.SalespersonKey = DE.EmployeeKey
+    GROUP BY DD.Date, DD.CalendarMonthLabel, DD.Day, DD.ShortMonth, DD.CalendarYear, DE.PreferredName, DE.Employee
+    ORDER BY DD.Date ASC, DE.PreferredName ASC, DE.Employee ASC
+    ```
       ![](./media/image106.png)
 
 21. In this cell, you read from the temporary Spark view created in the
     previous cell and finally write it as a delta table in
     the **Tables** section of the lakehouse.
     
-      ```
-      sale_by_date_employee = spark.sql("SELECT * FROM sale_by_date_employee")
-      sale_by_date_employee.write.mode("overwrite").format("delta").option("overwriteSchema", "true").save("Tables/aggregate_sale_by_date_employee")
-      ```
+    ```
+    sale_by_date_employee = spark.sql("SELECT * FROM sale_by_date_employee")
+    sale_by_date_employee.write.mode("overwrite").format("delta").option("overwriteSchema", "true").save("Tables/aggregate_sale_by_date_employee")
+    ```
        ![](./media/image107.png)
 
 23. To validate the created tables, click and select refresh on
